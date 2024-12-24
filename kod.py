@@ -64,3 +64,25 @@ def arctan_taylor_series(x, terms=10):
         result += term
     return result
 
+def radians_to_degrees(radians):
+    '''
+    Перевод числа из радиан в градусы.
+
+    Эта функция переводит значение угла из радиан в градусы.
+
+    Аргументы:
+    radians - угол в радианах.
+
+    Возвращаемое значение:
+    float - угол в градусах.
+
+    Исключения:
+    Отсутствуют.
+
+    Пример:
+    >>> radians_to_degrees(math.pi)
+    180.0
+    >>> radians_to_degrees(math.pi/2)
+    90.0
+    '''
+    return radians * (180 / math.pi)
